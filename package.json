@@ -6,12 +6,11 @@
   "scripts": {
     "start": "budo -H 0.0.0.0 example.js:bundle.js --live -- -t glslify"
   },
-  "keywords": [
-    "regl",
-    "skybox",
-    "cubemap",
-    "environment map"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wwwtyro/regl-render-envmap.git"
+  },
+  "keywords": ["regl", "skybox", "cubemap", "environment map"],
   "main": "index.js",
   "description": "A simple tool for rendering environment maps with regl.",
   "dependencies": {
