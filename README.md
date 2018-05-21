@@ -66,8 +66,8 @@ const envMap = renderEnvMap(regl, renderer);
 
 ## Usage
 
-```
-const renderEnvMap = require('regl-render-envmap');
+```js
+const renderEnvMap = require("regl-render-envmap");
 
 const envMap = renderEnvMap(regl, renderCallback, opts);
 ```
