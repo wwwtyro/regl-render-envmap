@@ -1,0 +1,28 @@
+{
+  "name": "regl-render-envmap",
+  "license": "Unlicense",
+  "author": "Rye Terrell <ryeterrell@ryeterrell.net> (http://wwwtyro.net)",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "budo -H 0.0.0.0 example.js:bundle.js --live -- -t glslify"
+  },
+  "keywords": [
+    "regl",
+    "skybox",
+    "cubemap",
+    "environment map"
+  ],
+  "main": "index.js",
+  "description": "A simple tool for rendering environment maps with regl.",
+  "dependencies": {
+    "gl-matrix": "^2.6.0"
+  },
+  "devDependencies": {
+    "budo": "^11.2.1",
+    "glsl-atmosphere": "^2.0.0",
+    "glslify": "^6.1.1",
+    "primitive-cube": "^2.0.1",
+    "regl": "^1.3.5",
+    "unindex-mesh": "^2.0.0"
+  }
+}
