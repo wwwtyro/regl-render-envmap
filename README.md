@@ -12,7 +12,7 @@ npm install regl-render-envmap
 
 ## Example
 
-```
+```js
 const renderEnvMap = require("regl-render-envmap");
 
 const cube = generateCubePositions();
