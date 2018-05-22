@@ -14,8 +14,6 @@ module.exports = function renderCubemap(regl, renderer, opts) {
       ? regl.framebufferCube(opts.resolution)
       : opts.cubeFBO;
 
-  window.fbo = opts.cubeFBO;
-
   const faces = [
     { center: [1, 0, 0], up: [0, -1, 0], fbo: opts.cubeFBO.faces[0] },
     { center: [-1, 0, 0], up: [0, -1, 0], fbo: opts.cubeFBO.faces[1] },
