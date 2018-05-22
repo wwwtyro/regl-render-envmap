@@ -92,8 +92,8 @@ which provides the following:
 * near: the near plane to use when constructing the projection matrix, float, default 0.1
 * far: the far plane to use when constructing the projection matrix, float, default 1000.0
 * eye: the position of the camera, vec3, default [0, 0, 0]
-* resolution: the resolution of each square face of the environment cubemap, int, default 1024
-* cubeFBO: the regl `framebufferCube` object that will be returned, default `regl.framebufferCube(resolution)`
+* resolution: the resolution of each square face of the environment cubemap if `cubeFBO` is not provided, int, default 1024
+* cubeFBO: the regl `framebufferCube` object that will be returned, default `regl.framebufferCube(opts.resolution)`
 
 #### Returns
 
