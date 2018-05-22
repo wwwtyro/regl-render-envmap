@@ -75,7 +75,7 @@ const envMap = renderEnvMap(regl, renderCallback, opts);
 `renderEnvMap` calls `renderCallback` 6 times, once for each face of the environment cubemap, and returns a regl `framebufferCube` object
 that can be immediately used as a `samplerCube` in your shaders.
 
-#### Parameters
+### Parameters
 
 **regl**: The regl context you want to use the resulting regl `framebufferCube` object in.
 
@@ -89,13 +89,13 @@ which provides the following:
 
 **opts**: An object with the following members:
 
-* near: the near plane to use when constructing the projection matrix, float, default 0.1
-* far: the far plane to use when constructing the projection matrix, float, default 1000.0
-* eye: the position of the camera, vec3, default [0, 0, 0]
-* resolution: the resolution of each square face of the environment cubemap if `cubeFBO` is not provided, int, default 1024
-* cubeFBO: the regl `framebufferCube` object that will be returned, default `regl.framebufferCube(opts.resolution)`
+* **near**: the near plane to use when constructing the projection matrix, float, default 0.1
+* **far**: the far plane to use when constructing the projection matrix, float, default 1000.0
+* **eye**: the position of the camera, vec3, default [0, 0, 0]
+* **resolution**: the resolution of each square face of the environment cubemap if `cubeFBO` is not provided, int, default 1024
+* **cubeFBO**: the regl `framebufferCube` object that will be returned, default `regl.framebufferCube(opts.resolution)`
 
-#### Returns
+### Returns
 
 `renderEnvMap` will return a regl `framebufferCube` object that can be immediately used as a `samplerCube` in your shaders.
 
