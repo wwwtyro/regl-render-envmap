@@ -1,6 +1,7 @@
 "use strict";
 
 const mat4 = require("gl-matrix").mat4;
+const vec3 = require("gl-matrix").vec3;
 
 module.exports = function renderCubemap(regl, renderer, opts) {
   opts = opts || {};
@@ -24,7 +25,7 @@ module.exports = function renderCubemap(regl, renderer, opts) {
   ];
 
   for (let f of faces) {
-    const view = mat4.lookAt([], opts.eye, f.center, f.up);
+    const view = mat4.lookAt([], opts.eye, vec3.add([], opts.eye, f.center), f.up);
     const projection = mat4.perspective(
       [],
       Math.PI / 2,
